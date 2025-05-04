@@ -2,11 +2,16 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Superposition d'images</title>
+  <title>Superposition d'images sans container</title>
   <style>
-    .container {
-      position: relative;
-      width: 1080px; /* largeur personnalisable */
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative; /* pour servir de référence à l'image superposée */
     }
 
     .image-fond {
@@ -19,16 +24,15 @@
       top: 0;
       left: 0;
       width: 30%;
-      opacity: 1; /* transparence optionnelle */
+      opacity: 0.8; /* ajustable */
+      pointer-events: none; /* pour que le clic passe à travers, optionnel */
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="IMG_1302.jpg" alt="Image de fond" class="image-fond">
-    <img src="1234.gif" alt="Image superposée" class="image-dessus">
-  </div>
+  <img src="IMG_1302.jpg" alt="Image de fond" class="image-fond">
+  <img src="1234.gif" alt="Image superposée" class="image-dessus">
 
 </body>
 </html>
