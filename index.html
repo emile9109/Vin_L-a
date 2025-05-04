@@ -32,37 +32,29 @@
       z-index: 1;
     }
 
-    .image-insta {
+    /* Style pour les images dans chaque coin */
+    .image-insta, .image-maps, .image-facebook {
       position: absolute;
-      top: 90%;
-      left: 10%;
       width: 30%;
       transform: translate(-50%, -50%);
       opacity: 1;
       cursor: pointer;
-      z-index: 9999; /* IMPORTANT : pour être au-dessus */
+      z-index: 9999; /* Pour être au-dessus de l'image de fond */
+    }
+
+    .image-insta {
+      top: 10%; /* Coin supérieur gauche */
+      left: 10%;
     }
 
     .image-maps {
-      position: absolute;
-      top: 90%;
+      top: 90%; /* Coin inférieur droit */
       left: 90%;
-      width: 30%;
-      transform: translate(-50%, -50%);
-      opacity: 1;
-      cursor: pointer;
-      z-index: 9999; /* IMPORTANT : pour être au-dessus */
     }
 
-    .image-facebook{
-      position: absolute;
-      top: 10%;
+    .image-facebook {
+      top: 10%; /* Coin supérieur droit */
       left: 90%;
-      width: 30%;
-      transform: translate(-50%, -50%);
-      opacity: 1;
-      cursor: pointer;
-      z-index: 9999; /* IMPORTANT : pour être au-dessus */
     }
   </style>
 </head>
@@ -71,17 +63,17 @@
   <!-- Image de fond -->
   <img src="IMG_1302.jpg" alt="Image de fond" class="image-fond">
 
-  <!-- Image cliquable qui mène vers Instagram -->
+  <!-- Images superposées, chacune dans un coin -->
   <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
-    <img src="1234.gif" alt="Image superposée" class="image-p">
+    <img src="1234.gif" alt="Image superposée" class="image-insta">
+  </a>
+
+  <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+    <img src="1234.gif" alt="Image superposée" class="image-facebook">
   </a>
 
   <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
     <img src="1234.gif" alt="Image superposée" class="image-maps">
-  </a>
-
-  <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
-    <img src="1234.gif" alt="Image superposée" class="image-insta">
   </a>
 
 </body>
