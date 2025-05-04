@@ -14,11 +14,7 @@
       height: 100%;
       width: 100%;
       background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       position: relative;
-      overflow: hidden;
     }
 
     .image-fond {
@@ -39,23 +35,27 @@
       transform: translate(-50%, -50%);
       opacity: 1;
       cursor: pointer;
-      z-index: 9999; /* Pour être au-dessus de l'image de fond */
+      z-index: 9999;
     }
 
+    /* Positionnement des images dans chaque coin à 10% */
     .image-insta {
       top: 10%; /* Coin supérieur gauche */
       left: 10%;
     }
 
-    .image-maps {
-      top: 90%; /* Coin inférieur droit */
-      left: 90%;
-    }
-
     .image-facebook {
       top: 10%; /* Coin supérieur droit */
       left: 90%;
+      transform: translate(-90%, -50%); /* Ajustement pour le coin droit */
     }
+
+    .image-maps {
+      top: 90%; /* Coin inférieur gauche */
+      left: 10%;
+      transform: translate(-50%, -90%);
+    }
+
   </style>
 </head>
 <body>
