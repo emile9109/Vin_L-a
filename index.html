@@ -32,10 +32,32 @@
       z-index: 1;
     }
 
-    .image-dessus {
+    .image-insta {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 90%;
+      left: 10%;
+      width: 30%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      cursor: pointer;
+      z-index: 9999; /* IMPORTANT : pour être au-dessus */
+    }
+
+    .image-maps {
+      position: absolute;
+      top: 90%;
+      left: 90%;
+      width: 30%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      cursor: pointer;
+      z-index: 9999; /* IMPORTANT : pour être au-dessus */
+    }
+
+    .image-facebook{
+      position: absolute;
+      top: 10%;
+      left: 90%;
       width: 30%;
       transform: translate(-50%, -50%);
       opacity: 1;
@@ -51,7 +73,15 @@
 
   <!-- Image cliquable qui mène vers Instagram -->
   <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
-    <img src="1234.gif" alt="Image superposée" class="image-dessus">
+    <img src="1234.gif" alt="Image superposée" class="image-p">
+  </a>
+
+  <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+    <img src="1234.gif" alt="Image superposée" class="image-maps">
+  </a>
+
+  <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+    <img src="1234.gif" alt="Image superposée" class="image-insta">
   </a>
 
 </body>
