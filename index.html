@@ -22,28 +22,34 @@
     }
 
     .image-fond {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       height: 100vh;
       width: auto;
-      max-width: 100%;
-      display: block;
+      max-width: none;
+      z-index: 1;
     }
 
     .image-dessus {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  cursor: pointer;
-  z-index: 10; /* ajout essentiel */
-  }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      cursor: pointer;
+      z-index: 2; /* IMPORTANT : pour être au-dessus */
+    }
   </style>
 </head>
 <body>
 
+  <!-- Image de fond -->
   <img src="IMG_1302.jpg" alt="Image de fond" class="image-fond">
 
+  <!-- Image cliquable qui mène vers Instagram -->
   <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
     <img src="1234.gif" alt="Image superposée" class="image-dessus">
   </a>
