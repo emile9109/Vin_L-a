@@ -2,21 +2,29 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Superposition d'images sans container</title>
+  <title>Superposition d'images responsive</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       background-color: #f0f0f0;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      position: relative; /* pour servir de référence à l'image superposée */
+      position: relative;
+      overflow: hidden;
     }
 
     .image-fond {
-      width: 100%;
-      display: block;
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
     }
 
     .image-dessus {
@@ -24,8 +32,7 @@
       top: 0;
       left: 0;
       width: 30%;
-      opacity: 0.8; /* ajustable */
-      pointer-events: none; /* pour que le clic passe à travers, optionnel */
+      opacity: 1;
     }
   </style>
 </head>
