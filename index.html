@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Superposition avec lien Instagram</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #f0f0f0;
+      position: relative;
+    }
+
+    .image-fond {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100vh;
+      width: auto;
+      max-width: none;
+      z-index: 1;
+    }
+
+    /* Conteneur pour les images alignées en bas */
+    .image-container {
+      position: absolute;
+      bottom: 2%;  /* 2% du bord bas */
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5%;  /* Espacement gauche et droite de 5% pour les images */
+      z-index: 9999;
+    }
+
+    /* Style pour les images */
+    .image-container img {
+      width: 5%;  /* Taille de l'image à 5% de la largeur */
+      height: auto;  /* Maintien des proportions de l'image */
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Image de fond -->
+  <img src="IMG_1302.jpg" alt="Image de fond" class="image-fond">
+
+  <!-- Conteneur avec les images alignées en bas -->
+  <div class="image-container">
+    <!-- Lien vers Instagram -->
+    <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+      <img src="1234.gif" alt="Image superposée">
+    </a>
+
+    <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+      <img src="1234.gif" alt="Image superposée">
+    </a>
+
+    <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+      <img src="1234.gif" alt="Image superposée">
+    </a>
+  </div>
+
+</body>
+</html>
