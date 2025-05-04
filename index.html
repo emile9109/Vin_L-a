@@ -2,26 +2,33 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon image locale</title>
+  <title>Superposition d'images</title>
   <style>
-    body {
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    .container {
+      position: relative;
+      width: 300px; /* largeur personnalisable */
     }
-    img {
-      max-width: 90%;
-      height: auto;
-      cursor: pointer; /* pour montrer que c'est cliquable */
+
+    .image-fond {
+      width: 100%;
+      display: block;
+    }
+
+    .image-dessus {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.7; /* transparence optionnelle */
     }
   </style>
 </head>
 <body>
-  <!-- Lien cliquable vers Instagram -->
-  <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
-    <img src="1234.gif" alt="Mon image">
-  </a>
+
+  <div class="container">
+    <img src="image1.jpg" alt="Image de fond" class="image-fond">
+    <img src="image2.png" alt="Image superposée" class="image-dessus">
+  </div>
+
 </body>
 </html>
