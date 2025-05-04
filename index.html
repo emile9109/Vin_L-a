@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Superposition centrée et responsive</title>
+  <title>Superposition avec lien Instagram</title>
   <style>
     * {
       box-sizing: border-box;
@@ -22,8 +22,8 @@
     }
 
     .image-fond {
-      height: 100vh; /* pleine hauteur */
-      width: auto; /* respect du ratio vertical */
+      height: 100vh;
+      width: auto;
       max-width: 100%;
       display: block;
     }
@@ -35,13 +35,17 @@
       width: 30%;
       transform: translate(-50%, -50%);
       opacity: 1;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <img src="IMG_1302.jpg" alt="Image de fond" class="image-fond">
-  <img src="1234.gif" alt="Image superposée" class="image-dessus">
+
+  <a href="https://www.instagram.com/domainepierreweber/" target="_blank">
+    <img src="1234.gif" alt="Image superposée" class="image-dessus">
+  </a>
 
 </body>
 </html>
